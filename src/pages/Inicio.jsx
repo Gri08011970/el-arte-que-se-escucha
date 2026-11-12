@@ -23,7 +23,7 @@ function Inicio({ comenzar }) {
         <div className="inicio-linea"></div>
 
         <p className="inicio-descripcion">
-          Nueve obras. Nueve emociones. Un recorrido donde la pintura, la música y
+          Nueve obras. Nueve emociones. Un recorrido donde el arte, la música y
           la imaginación se encuentran.
         </p>
 

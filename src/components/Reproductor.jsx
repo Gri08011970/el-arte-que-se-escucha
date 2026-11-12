@@ -364,7 +364,7 @@ function Reproductor({ audio, transicionando = false }) {
             cambiarOpcion("archivo")
           }
         >
-          🎵 Música elegida por Sofía
+          🎵 La Música que elegí
         </button>
       </div>
 

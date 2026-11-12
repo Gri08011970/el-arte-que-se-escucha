@@ -208,3 +208,144 @@
   transform: scale(0.97);
 }
 
+/* ⭐ Sorpresa escondida para Sofi */
+
+.sorpresa-contenedor {
+  width: 100%;
+  margin-top: 18px;
+  text-align: center;
+}
+
+.estrella-secreta {
+  background: transparent;
+  border: none;
+  color: #f4d98a;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 10px 16px;
+  opacity: 0.55;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.estrella-secreta:hover,
+.estrella-secreta:focus-visible {
+  opacity: 1;
+  transform: scale(1.25) rotate(15deg);
+}
+
+.mensaje-secreto {
+  max-width: 540px;
+  margin: 16px auto 24px;
+  padding: 28px 25px;
+  background: linear-gradient(
+    145deg,
+    rgba(73, 25, 100, 0.45),
+    rgba(20, 10, 35, 0.9)
+  );
+  border: 1px solid rgba(218, 143, 255, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 0 35px rgba(177, 76, 220, 0.12);
+  animation: aparecerEstrella 0.8s ease;
+}
+
+.mensaje-estrella {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+.mensaje-secreto p {
+  color: #f3e9fa;
+  font-size: 15px;
+  line-height: 1.9;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.mensaje-secreto .mensaje-final {
+  color: #e5a6ff;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+@keyframes aparecerEstrella {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* La pintura de Sofi en la sorpresa */
+
+.sorpresa-pintura {
+  margin-top: 26px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(218, 143, 255, 0.25);
+  text-align: center;
+}
+
+.sorpresa-pintura img {
+  display: block;
+  width: 100%;
+  max-width: 310px;
+  height: auto;
+  margin: 0 auto;
+  border: 6px solid #211329;
+  border-radius: 5px;
+  box-shadow:
+    0 0 0 1px rgba(232, 183, 255, 0.45),
+    0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.sorpresa-pintura .sorpresa-firma {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #e9b9ff;
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 0.4px;
+}
+
+/* ⭐ Sorpresa de Sofi: disposición horizontal */
+
+@media (min-width: 900px) {
+  .mensaje-secreto {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 240px;
+    column-gap: 24px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mensaje-estrella,
+  .mensaje-secreto > p {
+    grid-column: 1;
+  }
+
+  .sorpresa-pintura {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .sorpresa-pintura img {
+    max-width: 100%;
+  }
+}
+
+.sorpresa-pintura img {
+  width: 100%;
+  max-width: 310px;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+ 
+}

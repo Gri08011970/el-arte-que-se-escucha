@@ -16,7 +16,7 @@ export const obras = [
       "Composición experimental de notas delicadas, sonidos suaves y silencios que invitan a contemplar la imagen y reflexionar sobre el paso del tiempo.",
 
     justificacion:
-      "Elegí esta fotografía porque me invita a reflexionar sobre la vida. Algunas flores están abiertas y otras se marchitan, recordándome que todo cambia y que cada instante tiene su propia belleza. Su título, «Sólo muere la vida», me hace pensar en lo valioso de estar vivos y en la importancia de apreciar los momentos que compartimos.",
+  "La fotografía me invita a reflexionar sobre la vida. Algunas flores están abiertas y otras se marchitan, recordándome que todo cambia y que cada instante tiene su propia belleza. Para acompañarla, elegí una composición de notas delicadas, sonidos suaves y silencios. El ritmo pausado representa el paso del tiempo y las pausas me invitan a detenerme y pensar. La música me transmite tranquilidad y cierta nostalgia, y me recuerda lo valioso de estar vivos y de apreciar los momentos que compartimos.",
 
     transicion:
       "Las notas se desvanecen lentamente y la fotografía deja paso a un cielo lleno de estrellas, invitándome a descubrir una nueva emoción: el asombro.",
@@ -167,7 +167,7 @@ export const obras = [
 
     
    justificacion:
-    "Elegí esta fotografía porque el ave en pleno vuelo me transmite libertad. Mientras el edificio permanece inmóvil, la paloma puede desplazarse por el cielo. Quiero representar esa sensación con una música que comience tranquila y se vuelva cada vez más amplia y luminosa... Y porque quien tomó esta foto es una de mis personas favoritas: mi hermano.",
+    "Esta fotografía de un ave en pleno vuelo me transmite libertad. Mientras el edificio permanece inmóvil, la paloma puede desplazarse por el cielo. Quiero representar esa sensación con una música que comience tranquila y se vuelva cada vez más amplia y luminosa... La imagen es espetacular y  quien la capturó en una foto es una de mis personas favoritas: MI HERMANO, TOMI.",
 
     transicion:
       "Los sonidos se elevan suavemente y luego disminuyen hasta desaparecer, mientras la fotografía se desvanece para dar paso a una nueva emoción.",

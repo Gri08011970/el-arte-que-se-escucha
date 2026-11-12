@@ -6,12 +6,14 @@ import Reproductor from "../components/Reproductor";
 function Galeria({ volver }) {
   const [indice, setIndice] = useState(0);
   const [transicionando, setTransicionando] = useState(false);
+  const [mostrarSorpresa, setMostrarSorpresa] = useState(false);
 
   const obra = obras[indice];
 
   const siguiente = () => {
     if (transicionando || indice >= obras.length - 1) return;
 
+    setMostrarSorpresa(false);
     setTransicionando(true);
 
     setTimeout(() => {
@@ -23,6 +25,7 @@ function Galeria({ volver }) {
   const anterior = () => {
     if (transicionando || indice <= 0) return;
 
+    setMostrarSorpresa(false);
     setTransicionando(true);
 
     setTimeout(() => {
@@ -51,6 +54,56 @@ function Galeria({ volver }) {
       >
         <div className="obra-imagen">
           <img src={obra.imagen} alt={obra.titulo} />
+
+          {obra.id === 0 && (
+            <div className="sorpresa-contenedor">
+              <button
+                type="button"
+                className="estrella-secreta"
+                onClick={() => setMostrarSorpresa((actual) => !actual)}
+                aria-label={
+                  mostrarSorpresa
+                    ? "Cerrar mensaje secreto"
+                    : "Descubrir una estrella"
+                }
+                aria-expanded={mostrarSorpresa}
+              >
+                ✨
+              </button>
+
+              {mostrarSorpresa && (
+                <div className="mensaje-secreto">
+                  <span className="mensaje-estrella">⭐</span>
+
+                  <p>
+                    Hay obras que vuelven a encontrarnos y nos recuerdan quiénes
+                    éramos, cuánto crecimos y cuánta belleza todavía nos espera.
+                  </p>
+
+                  <p>
+                    Porque la vida es valiosa, incluso en los días en que cuesta
+                    descubrir sus colores.
+                  </p>
+
+                  <p className="mensaje-final">
+                    Y siempre puede regalarnos una nueva noche llena de
+                    estrellas. 💜
+                  </p>
+
+                  <div className="sorpresa-pintura">
+                    <img
+                      src="/obras/noche-estrellada-sofi.jpg"
+                      alt="Interpretación de La noche estrellada pintada por Sofi"
+                    />
+
+                    <p className="sorpresa-firma">
+                      Una noche estrellada, pintada por Sofi. ✨
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
 
         <div className="obra-informacion">
@@ -74,7 +127,7 @@ function Galeria({ volver }) {
               transicionando={transicionando}
             />
 
-            <h3>💜 ¿Por qué esta música?</h3>
+            <h3>💜 ¿Por qué?</h3>
             <p>{obra.justificacion}</p>
 
             <h3>✨ Transición artística</h3>
