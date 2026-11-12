@@ -17,6 +17,7 @@ function Galeria({ volver }) {
     setTransicionando(true);
 
     setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
       setIndice((actual) => actual + 1);
       setTransicionando(false);
     }, 1500);
@@ -29,6 +30,7 @@ function Galeria({ volver }) {
     setTransicionando(true);
 
     setTimeout(() => {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
       setIndice((actual) => actual - 1);
       setTransicionando(false);
     }, 1500);
