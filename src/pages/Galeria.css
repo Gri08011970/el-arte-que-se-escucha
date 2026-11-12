@@ -1,0 +1,210 @@
+
+.galeria {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 80% 20%, #381052, transparent 45%),
+    #090611;
+  color: white;
+  padding: 30px 5%;
+}
+
+.galeria-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  color: #c4b5fd;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.volver {
+  background: transparent;
+  color: #e9d5ff;
+  border: 1px solid #7e22ce;
+  border-radius: 30px;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.galeria-contenido {
+  max-width: 1300px;
+  margin: 65px auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 55px;
+  animation: entradaObra 0.8s ease;
+}
+
+.obra-imagen img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 0 60px #9333ea55;
+}
+
+.obra-emocion {
+  color: #e879f9;
+  font-size: 13px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.obra-informacion h1 {
+  font-size: clamp(35px, 5vw, 65px);
+  margin: 15px 0;
+  line-height: 1.1;
+}
+
+.obra-autor {
+  color: #c4b5fd;
+}
+
+.obra-descripcion {
+  margin-top: 30px;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e5d9ee;
+}
+
+.obra-musica {
+  margin-top: 30px;
+  padding: 25px;
+  border: 1px solid #7e22ce66;
+  border-radius: 18px;
+  background: #ffffff08;
+}
+
+.obra-musica h3 {
+  color: #e879f9;
+  margin: 20px 0 8px;
+}
+
+.obra-musica h3:first-child {
+  margin-top: 0;
+}
+
+.obra-musica p {
+  color: #d6c9e0;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.galeria-navegacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  padding-bottom: 30px;
+}
+
+.galeria-navegacion button {
+  background: linear-gradient(135deg, #9333ea, #db2777);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 14px 25px;
+  cursor: pointer;
+}
+
+.galeria-navegacion button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+@keyframes entradaObra {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 850px) {
+  .galeria-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px auto;
+  }
+
+  .galeria-header {
+    letter-spacing: 0;
+  }
+
+  .galeria-navegacion {
+    gap: 15px;
+  }
+}
+
+.reproductor-boton {
+  margin: 18px 0 10px;
+  padding: 14px 24px;
+  border: 1px solid #e879f9;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6b21a8, #be185d);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reproductor-boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px #d946ef66;
+}
+
+.selector-musica {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.selector-musica button {
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: 1px solid #9333ea;
+  background: transparent;
+  color: #e9d5ff;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.selector-musica button:hover {
+  border-color: #e879f9;
+  background: #9333ea33;
+}
+
+.selector-musica button.activo {
+  background: linear-gradient(135deg, #7e22ce, #be185d);
+  color: white;
+  border-color: #e879f9;
+  box-shadow: 0 0 15px #9333ea55;
+}
+
+.reproductor-info {
+  color: #c4b5fd;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+
+.galeria-contenido {
+  transition:
+    opacity 1.5s ease,
+    filter 1.5s ease,
+    transform 1.5s ease;
+}
+
+.galeria-contenido.desvaneciendo {
+  opacity: 0;
+  filter: blur(14px);
+  transform: scale(0.97);
+}
+
