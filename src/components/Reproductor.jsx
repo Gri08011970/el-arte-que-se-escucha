@@ -333,10 +333,10 @@ function Reproductor({ audio, transicionando = false }) {
   };
 
   const tituloArchivo =
-    audio?.tituloCancion || "Música elegida por Sofía";
+    audio?.tituloCancion || "";
 
   const artistaArchivo =
-    audio?.artistaCancion || "Selección pendiente";
+    audio?.artistaCancion || "";
 
   return (
     <div className="reproductor">
@@ -381,7 +381,7 @@ function Reproductor({ audio, transicionando = false }) {
 
       <p className="reproductor-info">
         {opcion === "experimental"
-          ? "🎶 Composición experimental original"
+          ? "🎶 "
           : audio?.archivo
             ? `🎵 ${tituloArchivo} · ${artistaArchivo}`
             : "🎵 Sofía todavía no eligió su canción"}

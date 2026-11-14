@@ -22,10 +22,7 @@ function Inicio({ comenzar }) {
 
         <div className="inicio-linea"></div>
 
-        <p className="inicio-descripcion">
-          Nueve obras. Nueve emociones. Un recorrido donde el arte, la música y
-          la imaginación se encuentran.
-        </p>
+        
 
         <button className="inicio-boton" onClick={comenzar}>
           COMENZAR EL RECORRIDO ✨

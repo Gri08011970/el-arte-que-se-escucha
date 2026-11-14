@@ -16,7 +16,7 @@ export const obras = [
       "Composición experimental de notas delicadas, sonidos suaves y silencios que invitan a contemplar la imagen y reflexionar sobre el paso del tiempo.",
 
     justificacion:
-  "La fotografía me invita a reflexionar sobre la vida. Algunas flores están abiertas y otras se marchitan, recordándome que todo cambia y que cada instante tiene su propia belleza. Para acompañarla, elegí una composición de notas delicadas, sonidos suaves y silencios. El ritmo pausado representa el paso del tiempo y las pausas me invitan a detenerme y pensar. La música me transmite tranquilidad y cierta nostalgia, y me recuerda lo valioso de estar vivos y de apreciar los momentos que compartimos.",
+  "La fotografía me hace pensar en la vida y en cómo todo camba con el tiempo. Algunas flores están abiertas y otras se marchitan pero todas tienen su propia belleza. Para acompañarla elegí:** Vienna de Billy Joel**, porque su letra transmite un mensaje sobre no apurarnos, disfrutar el presente y entender que cada cosa llega a su tiempo.",
 
     transicion:
       "Las notas se desvanecen lentamente y la fotografía deja paso a un cielo lleno de estrellas, invitándome a descubrir una nueva emoción: el asombro.",
@@ -28,7 +28,7 @@ export const obras = [
       sonidoId: "vida",
       archivo: "/musica/obra-00.mp3",
       titulo: "Instantes de vida",
-      artista: "Composición experimental original",
+      artista: "Billy Joel - Vienna",
     },
   },
 
@@ -44,7 +44,7 @@ export const obras = [
     musica:
       "Composición experimental con sintetizadores ambientales, sonidos brillantes y variaciones suaves de intensidad.",
     justificacion:
-      "Los sonidos envolventes representan el movimiento del cielo, mientras que las notas agudas evocan el brillo de las estrellas. La música busca transmitir la sensación de estar contemplando algo inmenso y misterioso.",
+      "Los sonidos envolventes representan el movimiento del cielo, mientras que las notas agudas evocan el brillo de las estrellas. La música busca transmitir la sensación de estar contemplando algo inmenso y misterioso.Decidí acomparla con: **Clair de Lune** porque  .",
     transicion:
       "La música se vuelve progresivamente más intensa y los colores de la imagen se oscurecen, preparando el paso hacia una emoción diferente: la angustia.",
     imagen: "/obras/noche-estrellada.jpg",
@@ -73,7 +73,7 @@ export const obras = [
       "Composición experimental con sonidos graves, vibraciones disonantes y pulsaciones irregulares que generan tensión.",
 
     justificacion:
-      "Elegí sonidos inquietantes porque la pintura transmite una emoción intensa y difícil de expresar con palabras. Las disonancias representan el desequilibrio emocional y las vibraciones acompañan las líneas onduladas de la obra.",
+      "La obra: El Grito representa la angustia, el miedo y la soledad. Para acompañarla elegí: **Creep de Radiohead** porque habla de sentirse diferente y de no encajar. Ambas se relacionan porque transmiten la sensación de estar fuera de lugar.",
 
     transicion:
       "Los sonidos tensos disminuyen lentamente y la imagen se desvanece para dar paso a una emoción diferente.",
@@ -104,7 +104,7 @@ export const obras = [
       "Composición experimental con pulsaciones rítmicas, sonidos electrónicos luminosos y notas que se repiten creando una sensación de movimiento y celebración.",
 
     justificacion:
-      "Elegí una música con ritmo porque los cuerpos parecen estar bailando sin detenerse. Las notas brillantes representan la alegría, mientras que la repetición de sonidos acompaña el movimiento circular de las figuras.",
+      "La obra : La danza transmite alegría, movimiento y libertad a través de las personas que bailan tomadas de las manos. Para acompañarla elegí:** Carnavalito del Duende**, porque es una canción folklórica que se baila en grupo, con pasos cortos, saltos y movimientos alegres, siguiendo el ritmo de la música. Se relacionan porque representan la unión, la diversión y la expresión a través del baile.",
 
     transicion:
       "El ritmo comienza a suavizarse y las figuras se desvanecen lentamente, preparando el paso hacia una emoción más íntima: el amor.",
@@ -135,7 +135,7 @@ export const obras = [
       "Composición experimental de sonidos electrónicos suaves, notas prolongadas y melodías delicadas que se superponen lentamente.",
 
     justificacion:
-      "Elegí una música tranquila porque siento que esta pintura representa un momento íntimo y especial. Las notas suaves me transmiten ternura y los sonidos prolongados me hacen pensar en un abrazo que parece durar para siempre.",
+      "La obra :El beso muestra a dos personas abrazadas en un momento de amor y cercanía. Sus colores y formas transmiten calidez y romantisismo. Para acompañarla elegí: **comptine d'un autre été** porque su melodía tranquila que acompaña la delicadeza de la pintura y transmite una sensación de conexión .",
 
     transicion:
       "Las notas se vuelven cada vez más suaves y la imagen dorada se desvanece lentamente, dando paso a una nueva emoción: la libertad.",

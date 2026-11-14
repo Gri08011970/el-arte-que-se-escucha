@@ -121,7 +121,6 @@ function Galeria({ volver }) {
 
           <div className="obra-musica">
             <h3>🎧 Experiencia sonora</h3>
-            <p>{obra.musica}</p>
 
             <Reproductor
               key={obra.id}
@@ -130,10 +129,17 @@ function Galeria({ volver }) {
             />
 
             <h3>💜 ¿Por qué?</h3>
-            <p>{obra.justificacion}</p>
-
-            <h3>✨ Transición artística</h3>
-            <p>{obra.transicion}</p>
+            <p>
+              {obra.justificacion
+                .split(/(\*\*.*?\*\*)/g)
+                .map((parte, i) =>
+                  parte.startsWith("**") && parte.endsWith("**") ? (
+                    <strong key={i}>{parte.slice(2, -2)}</strong>
+                  ) : (
+                    parte
+                  ),
+                )}
+            </p>
           </div>
         </div>
       </section>
