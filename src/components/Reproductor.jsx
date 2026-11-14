@@ -28,7 +28,7 @@ const sonidosExperimentales = {
 const DURACION_FUNDIDO = 1500;
 
 function Reproductor({ audio, transicionando = false }) {
-  const [opcion, setOpcion] = useState("experimental");
+  const [opcion, setOpcion] = useState("archivo");
   const [reproduciendo, setReproduciendo] = useState(false);
 
   const sonidoRef = useRef(null);
